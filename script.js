@@ -9,9 +9,16 @@ const checkForWinner = () => {
     if (gameBoard[winningCombinations[i][0]] === currentPlayer && gameBoard[winningCombinations[i][1]] === currentPlayer && gameBoard[winningCombinations[i][2]] === currentPlayer) {
       alert(`Player ${currentPlayer} wins!`);
       resetGame();
+      return;
     }
   }
+  // Check if the game board is full and there is no winner
+  if (!gameBoard.includes('')) {
+    alert("It's a draw!");
+    resetGame();
+  }
 }
+
 
 // Function to reset the game
 const resetGame = () => {
