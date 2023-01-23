@@ -19,3 +19,23 @@ td {
 .o {
   color: blue;
 }
+#reset-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3a3a3a;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#reset-button:hover {
+  background-color: #5c5c5c;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column; /* stack elements in a column */
+  align-items: center; /* center elements horizontally */
+}
+

@@ -43,3 +43,8 @@ document.querySelectorAll('.square').forEach((square) => {
   });
 });
 
+//Reset Game
+const resetButton = document.getElementById("reset-button");
+resetButton.addEventListener("click", resetGame);
+
+
